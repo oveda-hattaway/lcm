@@ -1,0 +1,189 @@
+<html>
+    <head>
+        <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-event-set-component@5.0.0/dist/aframe-event-set-component.min.js"></script>
+        <script src="https://unkpg.com/super-hands@3.0.0/dist/super-hands.min.js"></script>
+        <script src="progressive-controls.js"></script>
+        <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+    </head>
+    <body>
+    <a-scene>
+        <a-assets>
+            <img id="prague"
+                 src="Prague.jpg">
+        </a-assets>
+        
+        <a-sky src="#prague"></a-sky>
+        
+        <a-entity progressive-controls></a-entity>
+        
+        <!-- background boxes -->
+        <a-box id = "whiterect1" position = "-2.75, 5, -7" color="#dad4ca" depth="2" height="4" width="1"
+            
+            animation="property: position; to: -3.75 4 -6; dur: 10000; easing: linear"
+            animation__mouseenter="property: geometry.depth; to: 1; dur: 300; startEvents: mouseenter"
+            animation__click="property: components.material.material.color; type: color; to: #252b35; startEvents: click; dur: 500"></a-box>
+            
+        
+        <a-box id = "whiterect2" position = "-2.5, 0.65, -7" color="#dad4ca" depth="1.25" height="3.7" width="1.5"
+            animation="property: position; to: -3.5 -0.35 -6; dur: 15000; easing: linear"
+            animation__mouseenter="property: geometry.depth; to: 1; dur: 300; startEvents: mouseenter"
+            animation__click="property: components.material.material.color; type: color; to: #252b35; startEvents: click; dur: 1500"></a-box>
+        
+        <a-box id = "blackrect" position = "-1, 0.65, -7" color="#1c1c1a" depth="3" height="3.7" width="1.5"
+            animation="property: position; to: -2 -0.35 -6; dur: 20000; easing: linear"
+            animation__mouseenter="property: geometry.depth; to: 1; dur: 300; startEvents: mouseenter"
+            animation__click="property: components.material.material.color; type: color; to: #e3e3e5; startEvents: click; dur: 500" ></a-box>
+        
+        <a-box id = "purprect" position = "-2.5, 2.75, -7" color = "#786290" depth="4" height=".5" width="1.5"
+            animation="property: position; to: -3.5 1.75 -6; dur: 25000; easing: linear"
+            animation__mouseenter="property: geometry.depth; to: 1; dur: 300; startEvents: mouseenter"
+            animation__click="property: components.material.material.color; type: color; to: #879d6f; startEvents: click; dur: 500"></a-box>
+        
+        <a-box id = "mauverect" position = "-2, 4.5, -7" color = "#b398a1" depth="1" height="3" width=".5"
+            animation="property: position; to: -3 3.5 -6; dur: 30000; easing: linear"
+            animation__mouseenter="property: geometry.depth; to: 1; dur: 300; startEvents: mouseenter"
+            animation__click="property: components.material.material.color; type: color; to: #4c675e; startEvents: click; dur: 500"></a-box>
+        
+        <a-box id="roserect" position = "0.5, -0.325, -7" color = "#ac7583" depth="1.25" height="1.75" width="1.5"
+            animation="property: position; to: -0.5 -1.325 -6; dur: 35000; easing: linear"
+            animation__mouseenter="property: geometry.depth; to: 1; dur: 300; startEvents: mouseenter"
+            animation__click="property: components.material.material.color; type: color; to: #538a7c; startEvents: click; dur: 500"></a-box>
+        
+        <a-box id="babybluerect" position = "2, -0.325, -7" color = "#7d96ac" depth = "1.5" height="1.75" width="1.5"
+            animation="property: position; to: 1 -1.325 -6; dur: 40000; easing: linear"
+            animation__mouseenter="property: geometry.depth; to: 1; dur: 300; startEvents: mouseenter"
+            animation__click="property: components.material.material.color; type: color; to: #826953; startEvents: click; dur: 500"></a-box>
+               
+        
+        <a-box id="brownrect" position = "2, 1.78, -7" color="#84553b" depth="3" height="2.45" width="1.5"
+            animation="property: position; to: 1 0.78 -6; dur: 35000; easing: linear"
+            animation__mouseenter="property: geometry.depth; to: 1; dur: 300; startEvents: mouseenter"
+            animation__click="property: components.material.material.color; type: color; to: #7baac4; startEvents: click; dur: 500"></a-box>
+        
+        <a-box id="brightbluerect" position= "0.5, 2.4, -10" color = "#0471a3" depth="6" height="3.7" width="1.5"
+            animation="property: position; to: -0.5 1.4 -6; dur: 30000; easing: linear"
+            animation__mouseenter="property: geometry.depth; to: 1; dur: 300; startEvents: mouseenter"
+            animation__click="property: components.material.material.color; type: color; to: #fb8e5c; startEvents: click; dur: 500"></a-box>
+        
+        <a-box id = "whiterect3" position= "2, 5, -7" color= "#dad4ca" depth="1.4" height="4" width="1.5"
+            animation="property: position; to: 1 4 -6; dur: 25000; easing: linear"
+            animation__mouseenter="property: geometry.depth; to: 1; dur: 300; startEvents: mouseenter"
+            animation__click="property: components.material.material.color; type: color; to: #252b35; startEvents: click; dur: 500"></a-box>
+        
+        <a-box id="orangerect" position="-1, 3.38, -7" color="#d5663b" depth = "1" height="1.75" width="1.5"
+            animation="property: position; to: -2 2.38 -6; dur: 20000; easing: linear"
+            animation__mouseenter="property: geometry.depth; to: 1; dur: 300; startEvents: mouseenter"
+            animation__click="property: components.material.material.color; type: color; to: #2a9aca; startEvents: click; dur: 500"></a-box>
+        
+        <a-box id="lightbluerect" position="-1.4, 4.5, -6.99" color= "#4d99ba" depth="1.75" height="3" width=".75"
+            animation="property: position; to: -2.4 3.5 -5.99; dur: 15000; easing: linear"
+            animation__mouseenter="property: geometry.depth; to: 1; dur: 300; startEvents: mouseenter"
+            animation__click="property: components.material.material.color; type: color; to: #b26645; startEvents: click; dur: 500"></a-box>
+        
+        <a-box id="lightbluebox" position="-1.25, 6.5, -7" color="#88b7cc" depth="1.5" height="1" width="2"
+            animation="property: position; to: -2.25 5.5 -6; dur: 10000; easing: linear"
+            animation__mouseenter="property: geometry.depth; to: 1; dur: 300; startEvents: mouseenter"
+            animation__click="property: components.material.material.color; type: color; to: #774933; startEvents: click; dur: 500"></a-box>
+        
+        <a-box id="redbox" position="1, 4.9, -6.99" color="#cf2b32" depth="2" height="1.25" width="1.4"
+            animation="property: position; to: 0 3.9 -6; dur: 15000; easing: linear"
+            animation__mouseenter="property: geometry.depth; to: 1; dur: 300; startEvents: mouseenter"
+            animation__click="property: components.material.material.color; type: color; to: #30d4cc; startEvents: click; dur: 500"></a-box>
+        
+        
+        <!-- face circles -->
+        <a-circle id="yellowhemi" position="-0.2, 5.25, -6" color ="#edc668" radius= "1.5" theta-length = "90"
+            animation="property: position; to: -1.2 4.25 -5; dur: 15000; easing: linear"
+            animation__click="property: components.material.material.color; type: color; to: #123997; startEvents: click; dur: 500"></a-circle>
+        
+        <a-circle 
+            id="orangehemi" position = "-0.15, 4.5, -5" color = "#ed763e" radius = "1" theta-start = "90" theta-length = "90"
+            animation__click="property: position; startEvents: click; dur: 15000; to: 0, 100, 0"
+            animation="property: position; to: -1.15 3.5 -4; dur: 15000; easing: linear"></a-circle>
+        
+        <a-circle id="blackhemi" position = "-0.15, 4.5, -5" color = "#292b2a" radius = "1" theta-length = "90"
+            animation__click="property: position; startEvents: click; dur: 19000; to: 0, -100, 0"
+            animation="property: position; to: -1.15 3.5 -4; dur: 15000; easing: linear"></a-circle>
+        
+        <a-circle id="whitesemi" position="-.15, 4.1, -5.1" color="#e4ded2" radius="1.1" theta-start="90" theta-length="180"
+            animation="property: position; to: -1.15 3.1 -4.1; dur: 15000; easing: linear"
+            animation__click="property: components.material.material.color; type: color; to: #1b212d; startEvents: click; dur: 500"></a-circle>
+        
+        <a-circle id="lightbluesemi" position="-.15, 4.1, -5.1" color="#b3beca" radius="1.1" theta-start="270" theta-length="180"
+            animation="property: position; to: -1.15 3.1 -4.1; dur: 15000; easing: linear"
+            animation__click="property: components.material.material.color; type: color; to: #4c4135; startEvents: click; dur: 500"></a-circle>
+        
+        <a-circle id="yellowhemii" position="-.1, 3.9, -5.05" color="#dccd73" radius=".9" theta-start="270" theta-length="90"
+            animation__click="property: position; startEvents: click; dur: 10000; to: 0, 100, 0"
+            animation="property: position; to: -1.1 2.9 -4.05; dur: 15000; easing: linear"></a-circle>
+        
+        <!-- face triangles -->
+        <a-triangle id="redtri" position="-.15, 3, -4" color="#d41924" vertex-a=" .01 -.06" vertex-b="0.01 .1 -.2" vertex-c="-.2 0 0"
+            animation__click="property: position; startEvents: click; dur: 12000; to: 0, 100, 0"
+            animation="property: position; to: -1.15 2 -3; dur: 15000; easing: linear"
+            ></a-triangle>
+        
+        <a-triangle id="bluetri" position=".5, 3, -4" color="#b4bcc6" vertex-a="-.64 .04" vertex-b="-0.64 -.06" vertex-c="-0.4 0" 
+            animation__click="property: position; startEvents: click; dur: 10780; to: 0, -100, 0"
+            animation="property: position; to: -0.5 2 -3; dur: 15000; easing: linear"
+            ></a-triangle>
+        
+        <!-- left circles -->
+        <a-circle id="purplesemi" position="-1.331, .7, -5" color="#745b89" radius=".65" theta-start="90" theta-length="180"
+            animation__mouseenter="property: components.material.material.color; type: color; to: #8ba476; startEvents: mouseenter; dur: 500";
+            animation__mouseleave="property: components.material.material.color; type: color; to: #745b89; startEvents: mouseleave; dur: 500";
+            animation="property: position; to: -2.331 .7 -4; dur: 15000; easing: linear"
+            ></a-circle>
+        
+        <a-circle id="lightbluesemi" position="-1.331, .7, -5" color="#a4abb3" radius=".65" theta-start="270" theta-length="180"
+            animation__mouseenter="property: components.material.material.color; type: color; to: #5b544c; startEvents: mouseenter; dur: 500";
+            animation__mouseleave="property: components.material.material.color; type: color; to: #a4abb3; startEvents: mouseleave; dur: 500"
+            animation="property: position; to: -2.331 .7 -4; dur: 15000; easing: linear">
+            </a-circle>
+        
+        <!--right circles-->
+        <a-circle id="whitehemi" position="01, .7, -5" color="#d6cec2" radius=".65" theta-start="90" theta-length="90"
+            animation__mouseenter="property: components.material.material.color; type: color; to: #29313d; startEvents: mouseenter; dur: 500";
+            animation__mouseleave="property: components.material.material.color; type: color; to: #d6cec2; startEvents: mouseleave; dur: 500"
+            animation="property: position; to: 0 .7 -4; dur: 15000; easing: linear"></a-circle>
+        
+        <a-circle id="greenhemi" position="01, .7, -5" color="#009f65" radius=".65" theta-start="180" theta-length="90"
+            animation__mouseenter="property: components.material.material.color; type: color; to: #ff609a; startEvents: mouseenter; dur: 500";
+            animation__mouseleave="property: components.material.material.color; type: color; to: #009f65; startEvents: mouseleave; dur: 500"
+            animation="property: position; to: 0 .7 -4; dur: 15000; easing: linear"></a-circle>
+        
+        <a-circle id="cyanhemi" position="01, .7, -5" color="#71afa5" radius=".65" theta-length="90"
+            animation__mouseenter="property: components.material.material.color; type: color; to: #8e505a; startEvents: mouseenter; dur: 500";
+            animation__mouseleave="property: components.material.material.color; type: color; to: #71afa5; startEvents: mouseleave; dur: 500"
+            animation="property: position; to: 0 .7 -4; dur: 15000; easing: linear"></a-circle>
+        
+        <a-circle id="blackhemi2" position="01, .7, -5" color="#1b1d1a" radius=".65" theta-start="270" theta-length="90"
+            animation__mouseenter="property: components.material.material.color; type: color; to: #e4e2e5; startEvents: mouseenter; dur: 500";
+            animation__mouseleave="property: components.material.material.color; type: color; to: #1b1d1a; startEvents: mouseleave; dur: 500"
+            animation="property: position; to: 0 .7 -4; dur: 15000; easing: linear"></a-circle>
+        
+        <!-- face rectangles -->
+        <a-plane id = "cyanrect" position = "-0.65, 4.4, -5" color ="#84baaa" height=".2" width="1"
+            animation="property: position; to: -1.65 3.4 -4; dur: 15000; easing: linear"></a-plane>
+        <a-plane id="maroonplane" position = "-0.1, 3.95, -5" color = "#b84b56" height="1.1" width=".1"
+            animation="property: position; to: -1.1 2.95 -4; dur: 15000; easing: linear"></a-plane>
+        <a-plane id= "purpplane" position = "0.4, 4.45, -5" color ="#7a6182" height = ".1" width = ".9"
+            animation="property: position; to: -0.4 3.45 -4; dur: 15000; easing: linear"></a-plane>
+        <a-plane id = "greenrect" position = "0.4, 4.35, -5" color="#01b57d" height = ".1" width = ".9"
+            animation="property: position; to: -0.4 3.35 -4; dur: 15000; easing: linear"></a-plane>
+        <a-plane id ="blackplane" position = "-.65, 4.23, -5" color = "#252223" height = ".15" width = "1"
+            animation="property: position; to: -1.65 3.23 -4; dur: 15000; easing: linear"></a-plane>
+        <a-plane id="blueplane" position="-0.2, 3.78, -5" color = "#3285a9" height = ".75" width=".1"
+            animation="property: position; to: -1.2 2.78 -4; dur: 15000; easing: linear"></a-plane>
+        
+        <a-camera>
+            <a-entity cursor position = "0 0 -1"
+            geometry = "primitive: sphere; radius: 0.022"
+            material = "color: #fcfb92 ; shader: flat ; opacity: 0.5"></a-entity>
+        </a-camera>
+      
+        
+    </a-scene>
+    </body>
+</html>
